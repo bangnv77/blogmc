@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blogmc</title>
+    <title>Mackenzie Child - Part Designer, Part Developer</title>
+	  <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +12,15 @@
   </head>
 
   <body>
+    <header id="main_navigation" class="clearfix">
+  		<a href="#" class="name">Mackenzie Child</a>
+  		<nav>
+  			<%= link_to "Articles", posts_path %>
+  			<a href="#">Projects</a>
+  			<a href="#">Contact</a>
+  		</nav>
+  	</header>
+
     <%= yield %>
   </body>
 </html>
